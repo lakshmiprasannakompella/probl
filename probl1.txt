@@ -1,0 +1,24 @@
+class Solution
+{
+public:
+    int setKthBit(int N, int K)
+    {
+        return ((1<<K)|N);// Write Your Code here
+    }
+    
+};
+int main()
+{
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        int N, K;
+        cin >> N >> K;
+        
+        Solution ob;
+        int ans = ob.setKthBit(N,K);
+        cout << ans << endl;
+    }
+    return 0;
+}  // } Driver Code 
